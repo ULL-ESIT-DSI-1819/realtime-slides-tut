@@ -1,3 +1,4 @@
+const ip = require('ip');
 const express = require('express');
 const http = require('http');
 const showdown = require('showdown');
@@ -13,8 +14,9 @@ const converter = new showdown.Converter();
 // Configuration
 // ---------------------------------------------------------------------------
 
-server.listen(process.env.PORT || 8000, () => {
+server.listen(process.env.PORT || 8000, '0.0.0.0', () => {
   console.log(`[ server.js ] Listening on port ${server.address().port}`);
+  console.log(`[ server.js ] Listening on ${ip.address()}:${server.address().port}`);
 });
 
 // ---------------------------------------------------------------------------

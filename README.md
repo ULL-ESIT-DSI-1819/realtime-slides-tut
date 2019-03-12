@@ -2,6 +2,8 @@
 
 Demo project for a blog post on building a real-time presentation slides app.
 
+https://medium.com/@nafeunasir/real-time-presentation-slides-with-socket-io-express-node-js-and-javascript-cf08a95ff098
+
 ## Installation
 
 ```
